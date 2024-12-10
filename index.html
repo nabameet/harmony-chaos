@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmony & Chaos</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="canvas-container"></div>
+    
+    <div class="controls">
+        <button id="healTool" class="tool-btn">Heal Tool</button>
+        <button id="traumaTool" class="tool-btn">Trauma Tool</button>
+        <button id="freezeBtn">Freeze & Download</button>
+        <button id="analyticsBtn">Show Analytics</button>
+    </div>
+
+    <div id="analytics-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>System Analytics</h2>
+            <canvas id="analyticsChart"></canvas>
+        </div>
+    </div>
+
+    <script src="particle.js"></script>
+    <script src="sketch.js"></script>
+    <script src="analytics.js"></script>
+</body>
+</html> 
